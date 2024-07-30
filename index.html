@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- ####### bootstrap ###### -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- ########### linked files ############# -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./assets/css/mediaq.css">
+    <link rel="stylesheet" href="./assets/css/helper.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Janardhan - A Web Developer</title>
+  </head>
+  <body>
+    <!-- ######### HTML FOR HEADER & HERO SECTION STARTS HERE ######## -->
+
+
+    <header class="header" id="home">
+      <section class="navigation" id="mainnavbar">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <nav class="navbar navbar-expand-lg navbar-light bg-transparent mainnavbar" >
+                <a class="navbar-brand" href="index.html">Janardhan Shitole</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" id="togglenav">
+                  <i class="fa-solid fa-bars" id="hide"></i>
+                  <i class="fa-solid fa-xmark d-none" id="show"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-uppercase ml-auto">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#about" onclick="scrollToSection('about')">about</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#work" onclick="scrollToSection('work')">work</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#skills" onclick="scrollToSection('skills')">skills</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#projects" onclick="scrollToSection('projects')">projects</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#contact" onclick="scrollToSection('contact')">contact</a>
+                      </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="intro h-50"  data-aos="fade-down">
+          <div class="container h-100">
+            <div class="row h-100 mt-5">
+              <div class="col-lg-7 col-xl-8 order-1 order-xl-0 d-flex justify-content-center flex-column">
+                <div class="mainTitle">
+                  <p>hello! i'm,</p>
+                  <p>Janardhan Shitole</p>
+                  <div class="txtcontent">
+                    <div class="normaltxt text-white mr-2 mr-sm-3">I'm a</div>
+                    
+                      <ul class="changetxt">
+                        <li>angular developer</li>
+                        <li>front end developer</li>
+                      </ul>
+                    
+                  </div>
+                </div>
+                <div class="d-flex align-items-center">
+                  <div class="contact-btn">
+                    <a class="btn" href="./assets/images/JanardhanCv.pdf" target="_blank">
+                      Download CV
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-5 col-xl-4 d-flex flex-column align-items-center justify-content-center">
+                <ul class="social-connect">
+                  <li>
+                    <a href="https://www.linkedin.com/in/janardhan-shitole-257ba02a8/details/education/" target="_blank">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/karanshitole?tab=repositories" target="_blank">
+                      <i class="fa-brands fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+                <figure class="info-img mb-3">
+                  <div class="photo">
+                    <img src="./assets/images/karan.jpg" alt="janardhan-shitole" title="janardhan-shitole">
+                  </div>
+                </figure> 
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="waves"  data-aos="fade-down">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="var(--color-white)" fill-opacity="1" d="M0,288L21.8,277.3C43.6,267,87,245,131,213.3C174.5,181,218,139,262,117.3C305.5,96,349,96,393,122.7C436.4,149,480,203,524,234.7C567.3,267,611,277,655,261.3C698.2,245,742,203,785,197.3C829.1,192,873,224,916,202.7C960,181,1004,107,1047,101.3C1090.9,96,1135,160,1178,170.7C1221.8,181,1265,139,1309,112C1352.7,85,1396,75,1418,69.3L1440,64L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+      </section>
+    </header>
+
+
+
+
+
+    <!-- ######### HTML FOR ABOUT SECTION STARTS HERE ######## -->
+
+    <section class="about" id="about">
+      <div class="container">
+        <div class="row" data-aos="fade-right">
+          <div class="col-12">
+            <div class="d-flex justify-content-center align-items-center mb-3">
+              <h2 class="text-capitalize">
+                about 
+              <span>
+                me
+              </span>
+            </h2>
+            </div>
+            <div class="card">
+              <div class="card-body">
+                <div class="about-info">
+                  <h3 class="mb-3">
+                    Hi there! I'm Janardhan Shitole, <br>
+                    a passionate Front End Developer based in Nagpur, India
+                  </h3>
+                  <ul>
+                    <li>
+                      I'm a Front End Developer who thrives on solving complex problems and turning ideas into reality.
+                      I bring 1 years of experience to the table and genuine love for what i do.
+                    </li>
+                    <li>
+                      I'm known for my strong understanding of Angular Framework and html/css/javascript as they are fundamental to web development & angular.
+                    </li>
+                    <li>
+                      Knowledge of responsive web design using css framework like Bootsrap & Angular Material.
+                    </li>
+                    <li>
+                      Experience working in Agile Methodologies, participating in sprint planning.
+                    </li>
+                    <li>
+                      I'm truly passionate about the opportunity to create delightful user experience.
+                    </li>
+                    <li>
+                      I'm constantly motivated by the ever-evolving nature of web technologies, solving complex problems, innovation and creativity in my field.
+                    </li>
+                    <li>
+                      Love working with diverse teams to achieve common goals and commited to delivering high quality results and exceeding expectation.
+                    </li>
+                    <li>
+                      I'm always interested in new opportunities, collaborations and networking. Please feel free to
+                      <a href="#contact">
+                        contact me
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+     <!-- ######### HTML FOR EDUCATION AND EXPERIENCE SECTION STARTS HERE ######## -->
+
+
+     <section class="work" id="work">
+      <div class="container">
+        <div class="row">
+          
+          <div class="col col-12 col-md-6" data-aos="fade-right">
+            <header class="title mt-4 mt-md-0">
+              <h2>WORK EXPERIENCE</h2>
+            </header>
+            <div class="contents">
+              <div class="box">
+                <h4>2022 - Present</h4>
+                <h3>G-digit Info-tech</h3>
+                <p>Front-End Angular Developer.</p>
+                <ul>
+                  <li>  Led the front-end development for an E-commerce domain, ensuring a seamless and user-friendly experience. The
+                    major services include sales of electrical accessories like transformers, solar panels, motors and batteries.
+                    .</li>
+                  <li> Created different modules, components using Angular Material, pipes and directives in Angular as per business
+                    requirements.
+                    .
+                    </li>
+                    <li>
+                      Implemented responsive web design techniques to ensure that the e-commerce website functions well across various
+                      devices and screen sizes, providing a consistent user experience on desktops, tablets, and smartphones.
+                    </li>
+                    <li>
+                      Implementation of different types of Quotation forms using reactive forms in Angular and TD form for Login and
+                      Signup Component.
+                    </li>
+                    <li>
+                      Optimized the frontend performance by applying best practices such as code splitting, lazy loading, and caching.
+                    </li>
+                    <li>
+                      Monitor and analyze website performance metrics (e.g., page load time, time to interact) to identify and address
+                      performance bottlenecks Overcame data integration challenges in the user module implementing a custom API,
+                      ensuring accurate and up-to-date information to users.
+                    </li>
+                </ul>
+              </div>
+
+
+              <div class="box">
+                <h4>2021 - 2022</h4>
+                <h3>G-digit Info Tech</h3>
+                <p>Front End UI Developer</p>
+                <ul>
+                  <li>Converted PSD into responsive HTML using Bootstrap 3.</li>
+                  <li>Created interactions using JavaScript/jQuery.</li>
+                  <li>
+                    Used jQuery Plugins.
+                  </li>
+                  <li>
+                    Fixing issues raised by team.
+                  </li>
+                  <li>
+                    Responsive website for browser & environmental compatibility on every devices.
+                  </li>
+                </ul>
+              </div>
+              
+
+
+            </div>
+          </div>
+
+          <div class="col col-12 col-md-6" data-aos="fade-right">
+            <header class="title">
+              <h2>EDUCATION</h2>
+            </header>
+            <div class="contents">
+              <div class="box">
+                <h4>2016 - 2020</h4>
+                <h3>Bachelor's Engineer</h3>
+                <p>
+                 Shri Shivaji institute of engineer & and Managemant Parbhani
+                </p>
+                <ul>
+                  <li>Completed Batchelor's with CGPA of <strong>7.89</strong>, Grade : <strong>+A</strong>.</li>
+                  <li>During my academic year part of social activity called <strong>National Service Scheme</strong>.</li>
+                  <li>Along with my degree, completed basic computer courses like CCC, MS-CIT and FrontEnd Languages such as HTML5, CSS, JavaScript, TypeScript, Angular, Angular Material,
+                    Bootstrap,etc.
+                  </li>
+                </ul>
+              </div>
+              <div class="box">
+                <h4>2020 - 2021</h4>
+                <h3>G-digit Info Tech</h3>
+                <p>Alication Support Enginer</p>
+                <ul>
+                  <li>Coordinated with Level 1 techinicl support specialists to take over calls ouside their level of support.</li>
+                  <li>Assisted customers with more diffcult Technical issues requiring a greater level of personalized care and in greater length.</li>
+                  <li>
+                    Diagnose and troubleshoot softwear and hardware problems and hepl our clients install applications and programs.
+                  </li>
+                  <li>
+                      Escalated support desk tickets to Level 3 in the most crucial circumstances and on boareded and trained all incoming junior tech support specialists.
+                  </li>
+            
+                </ul>
+              </div>
+            </div>
+  
+          </div>
+        
+        
+        </div>
+       </div>
+     </section>
+
+
+
+
+
+
+     <!-- ######### HTML FOR SKILLS SECTION STARTS HERE ######## -->
+
+    <section class="skill" id="skills" data-aos="fade-right">
+      <div class="container">
+        <div class="row">
+
+            <div class="col-12">
+              <div class="headers skill-head">
+                <h2>
+                  My <span>Skills</span>
+                </h2>
+                <p>
+                  Here is my skills to represent my Expertise
+                </p>
+              </div>
+            </div>
+
+          
+        </div>
+        <div class="row">
+          <div class="col-12 mb-5">
+            <div class="experience-details-container">
+              <div class="about-containers">
+                <div class="details-container">
+                  <h2 class="experience-sub-title">Technical Skills</h2>
+                  <div class="article-container">
+    
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>HTML</h3>
+                  
+                      </div>
+                    </article>
+    
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>CSS</h3>
+                  
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>JavaScript</h3>
+                  
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>TypeScript</h3>
+                  
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>Angular 10</h3>
+                        
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>Angular Material</h3>
+                        
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>SASS</h3>
+                  
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>JQuery</h3>
+                       
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>RxJs</h3>
+                  
+                      </div>
+                    </article>
+                    <article>
+                      <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                      <div>
+                        <h3>Media Query</h3>
+                  
+                      </div>
+                    </article>
+    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="experience-details-container">
+              <h2 class="experience-sub-title">Professional Skills</h2>
+              <div class="article-container">
+    
+                <article>
+                  <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                  <div>
+                    <h3>Creativity</h3>
+              
+                  </div>
+                </article>
+                <article>
+                  <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                  <div>
+                    <h3>Communication</h3>
+              
+                  </div>
+                </article>
+                <article>
+                  <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                  <div>
+                    <h3>Problem Solving</h3>
+                    
+                  </div>
+                </article>
+                <article>
+                  <img src="https://cdn-icons-png.flaticon.com/512/665/665939.png" alt="Experience-icon" title="Experience-icon" class="icon">
+                  <div>
+                    <h3>Teamwork</h3>
+              
+                  </div>
+                </article>
+               
+    
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+      </div>
+    </section>
+
+
+
+
+
+    
+    <!-- ######### HTML FOR PROJECT SECTION STARTS HERE ######## -->
+
+    <section class="projects" id="projects" data-aos="fade-right">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="headers skill-head">
+              <h2>
+                Latest <span>Projects</span>
+              </h2>
+              <p>
+                Your Vision, Our Expertise
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="card-columns allproject">
+              
+
+              <div class="project card mb-4">
+                <a href="https://app-http-api.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Angular Course</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://s3-us-west-1.amazonaws.com/angular-university/course-images/rxjs-in-practice-course.png" alt="Course" title="Course">
+                  </div>
+                  <div class="card-footer">
+                    <p>Used FiresBase for DB, used HTTPclient for API, used Observable, used angular material components like toolbar, sidenav, formfields, snackbar, dialogue, button and card, used routing, Implemented edit and update.</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div class="project card mb-4">
+                <a href="https://foodblog-recipe-layout.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">FoodBlog</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://www.asweetpeachef.com/wp-content/uploads/2014/04/SweetPeaChef_HowToFoodBlog_ver1_1024x536.jpg" alt="FoodBlog" title="FoodBlog">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created FoodBlog Layout by using Html,css,javascript,owl-Carousel and used FireBase to Store and get Data. It's a multiple page layout where you can add your own recipe with ingredients and img which convert and store as base64 img in DB.</p>
+                  </div>
+                </a>
+              </div> -->
+
+              <div class="project card mb-4">
+                <a href="https://1st-layout.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Moshify Layout</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://img.freepik.com/free-vector/cloud-computing-digital-technology-concept-connection_1017-29591.jpg" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created this Layout using sass with responsive using media query.</p>
+                  </div>
+                </a>
+              </div>
+
+
+
+              
+              <div class="project card mb-4">
+                <a href="https://passenger-task-gold.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Passenger Task</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://media.istockphoto.com/id/515631167/photo/glider.jpg?s=612x612&w=0&k=20&c=qYs7i3tDRiR5LBcsFBUcDhUPR08PT23nLFYuu2-46Gw=" alt="Airlines" title="Airlines">
+                  </div>
+                  <div class="card-footer">
+                    <p>Used dumy data and transfer data from one component to another component using input and output created two different component for passenger list and passenger cards.</p>
+                  </div>
+                </a>
+              </div>
+
+              <!-- <div class="project card mb-4">
+                <a href="https://netflix-clone-one-mauve.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Netflix Clone</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://wallpapers.com/images/hd/netflix-background-6eijmcazwfrb9u6w.jpg" alt="Netflix Clone" title="Netflix">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created by using basic HTML, CSS & JavaScript and used jQuery-plugin(owl-Carousel.) with responsive using Media Queries used tmdb API key to get trending movie data and tested in postman implemented in this project.</p>
+                    
+                  </div>
+                </a>
+              </div> -->
+
+              <div class="project card mb-4">
+                <a href="https://karanshitole.github.io/layout-lodon-city/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">CityLand Layout</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://images.pexels.com/photos/3075993/pexels-photo-3075993.jpeg?cs=srgb&dl=pexels-sanaan-3075993.jpg&fm=jpg" alt="CityLand" title="CityLand">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created Multiple page layout using Bootstrap4, HTML, CSS & JavaScript and also used Owl-Carousel with responsive using Media Queries.</p>
+                  </div>
+                </a>
+              </div>
+
+
+              
+              <!-- <div class="project card mb-4">
+                <a href="https://ng-interview-httpmatfirebase.vercel.app/posts" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">HttpMatFirebase</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://img-b.udemycdn.com/course/750x422/5634404_ec85.jpg" alt="FoodBlog" title="FoodBlog">
+                  </div>
+                  <div class="card-footer">
+                    <p>Used firebase for post data and implemented CRUD used Angular Material components also used Bootstrap4.</p>
+                  </div>
+                </a>
+              </div> -->
+
+              <div class="project card mb-4">
+                <a href="https://flex-layout-red.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Movie Layout</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://movie-layout-using-flex.vercel.app/assets/images/bollywood.png" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created this Movie layout using flex, jQuery-plugin called LightBox with responsive using Media Queries.</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="project card mb-4">
+                <a href="https://sass-layout-nature.vercel.app/" target="_blank">
+                  <div class="card-header">
+                    <h4 class="m-0">Nature Layout</h4>
+                  </div>
+                  <div class="card-body">
+                    <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="">
+                  </div>
+                  <div class="card-footer">
+                    <p>Created this layout Using SASS with animations & responsive using Media Queries.</p>
+                  </div>
+                </a>
+              </div>
+            
+             
+                
+            
+             
+                
+            
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+
+
+    <!-- ######### HTML FOR CONTACT SECTION STARTS HERE ######## -->
+    
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-12 mb-5">
+            <div class="content text-center text-white">
+              <h2>Contact Me</h2>
+              <p>Let's Connect and Create Something Amazing Together!</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6" data-aos="fade-right">
+            <div class="contactInfo">
+    
+              <div class="boxx">
+                <div class="icon">
+                  <i class="fa-solid fa-location-dot"></i>
+                </div>
+                  <div class="text">
+                    <h3>Address</h3>
+                    <p>Palaskheda thombari , <br>
+                      post-rajur tq-Bhokardan, <br>
+                      dist-Jalna, maharashtra <br>
+                      431213
+                    </p>
+                  </div>
+              </div>
+    
+              <div class="boxx">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                  <div class="text">
+                    <h3>Phone</h3>
+                    <p>
+                      <a href="tel:+91 9049826265" target="_blank">+91 9049826265</a>
+                    </p>
+                  </div>
+              </div>
+    
+              <div class="boxx">
+                <div class="icon">
+                  <i class="fa-regular fa-envelope"></i>
+                </div>
+                  <div class="text">
+                    <h3>Email</h3>
+                    <p>
+                      <a href="mailto:shitolejanardhan11@gmail.com" target="_blank">shitolejanardhan11@gmail.com</a>
+                    </p>
+                  </div>
+              </div>
+    
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6" data-aos="fade-right">
+            <div class="contactform">
+              <form>
+                <h2>Send Message</h2>
+                <div class="form-group">
+                  <input type="text" name="" required class="form-control">
+                  <span>Fullname</span>
+                </div>
+                <div class="form-group">
+                  <input type="text" name="" required class="form-control">
+                  <span>Email</span>
+                </div>
+                <div class="form-group">
+                  <textarea type="text" name="" rows="4" required class="form-control"></textarea>
+                  <span>Type your Message...</span>
+                </div>
+                <div class="form-group">
+                  <input type="submit" name="" required value="Send" class="btn">
+                </div>
+              </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- ######### HTML FOR FOOTER SECTION STARTS HERE ######## -->
+
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <div class="socialIcons mb-2">
+              <a href="https://www.linkedin.com/in/janardhan-shitole-257ba02a8/details/education/" target="_blank">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="https://github.com/karanshitole?tab=repositories" target="_blank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="footerbottom">
+              <p class="m-0">Copyright &copy;Janardhan Rights Reserved. Designed and Developed with Passion.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+    <!-- ######## fixed position html ########## -->
+
+    <div class="upbtn" id="upbtn">
+      <i class="fa-solid fa-arrow-up text-white"></i>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- ####### jquery ######## -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <!-- ###### bootstrap js ############  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- ###### linked files ###### -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- ######### script main js ########## -->
+    <script src="./assets/js/app.js"></script>
+
+
+
+    <script>
+      AOS.init();
+    </script>
+</body>
+</html>
